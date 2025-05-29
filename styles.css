@@ -24,7 +24,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     text-align: center;
-    background: url('../img/flowers_2_MOB.png');
+    background: url('./img/flowers_2_MOB.png');
     background-position:top;
     background-repeat: no-repeat;
     background-size:cover;
@@ -206,7 +206,7 @@ body {
 /* Адаптация для больших экранов */
 @media (min-width: 768px) {
     .invitation {
-        background: url('../img/flowers_2.png');
+        background: url('./img/flowers_2.png');
         background-position: right top;
         background-repeat: no-repeat;
         background-size:100%;
