@@ -1,0 +1,375 @@
+@font-face {
+	font-family: 'WonderGardenScript-Regular';
+	src: url('../fonts/wondergardenscript-regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/wondergardenscript-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/wondergardenscript-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/wondergardenscript-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/wondergardenscript-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/wondergardenscript-regular.svg#wondergardenscript-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+/* Базовые стили */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #101010;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.invitation {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background: url('../img/flowers_2_MOB.png');
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: "Cormorant Infant", serif;
+    background-color: #EDEAE4;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.toptext{
+    width: 240px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
+.toptext h3{
+    font-family: 'WonderGardenScript-Regular';
+    font-weight: 500;
+    font-size: 90px;
+    margin: 0%;
+    line-height: 30px;
+    text-align: left;
+}
+.toptext h4{
+    width:180px;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0%;
+}
+
+.centraltext{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.name {
+    font-size: 44px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+}
+.and{
+    font-weight: 500;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-family: 'WonderGardenScript-Regular';
+    font-size: 90px;
+    line-height: 30px;
+}
+
+.date {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Cormorant Infant", serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.description{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.bottomtext{
+    font-family: 'WonderGardenScript-Regular';
+    font-weight: 500;
+    font-size: 70px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.righttoptext{
+    width: 350px;
+    margin-top: 90px;
+    margin-bottom: 5px;
+}
+.righttoptext h3{
+    text-align: right;
+    font-family: 'WonderGardenScript-Regular';
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.message{
+    margin-top:15px;
+    margin-bottom:15px;
+    text-align: center;
+    font-family: "Cormorant Infant", serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.bottomtext_1{
+    font-family: 'WonderGardenScript-Regular';
+    font-weight: 500;
+    font-size: 80px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.toptext_3{
+    width: 300px;
+    font-family: 'WonderGardenScript-Regular';
+    font-weight: 500;
+    font-size: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 40px;
+    text-align: left;
+}
+
+.schedule {
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family:  "Cormorant Infant", serif;
+    font-weight: 500;
+  }
+  
+  .event {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 40px;
+    margin-bottom: 25px;
+  }
+  
+  .time {
+    font-size: 20px;
+    text-align: left;
+    position: relative;
+  }
+  
+  
+  .details {
+    text-align: left;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .address {
+    font-size: 18px;
+  }
+  .LastPage{
+    margin-top: 100px;
+    margin-bottom: 50px;    
+  }
+
+/*Адаптация для маленьких экранов*/
+@media (max-width: 374px) {
+    .body{
+        background-color: #cf3c3c;
+    }
+    .invitation {
+        background-image: none;
+        font-family: "Cormorant Infant", serif;
+        background-color: #ffffff;
+        font-size: 20px;
+        display: grid;
+        padding: 0;
+        place-items: center; 
+    }
+}
+
+/* Адаптация для больших экранов */
+@media (min-width: 768px) {
+    .invitation {
+        background: url('../img/flowers_2.png');
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size:100%;
+        width: 600px;
+        padding: 40px;
+        font-family: "Cormorant Infant", serif;
+        border: 1px solid #e2dfd9;
+        box-shadow: 0 0 20px #6f6f6f2e;
+        background-color: #EDEAE4;
+        font-size: 20px;
+        display: grid;
+        place-items: center; 
+    }
+
+    .toptext{
+        width: 300px;
+        margin-top: 150px;
+        margin-bottom: 30px;
+    }
+    .toptext h3{
+        font-family: 'WonderGardenScript-Regular';
+        font-weight: 500;
+        font-size: 110px;
+        margin: 0%;
+        line-height: 40px;
+        text-align: left;
+    }
+    .toptext h4{
+        width:220px;
+        font-family: "Cormorant Infant", serif;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        line-height: 30px;
+        margin: 0%;
+    }
+
+    .centraltext{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .name {
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: 0%;
+    }
+    .and{
+        font-weight: 500;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        font-family: 'WonderGardenScript-Regular';
+        font-size: 100px;
+        line-height: 40px;
+    }
+
+    .date {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: "Cormorant Infant", serif;
+        font-size: 32px;
+        font-weight: 400;
+    }
+
+    .description{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .bottomtext{
+        font-family: 'WonderGardenScript-Regular';
+        font-weight: 500;
+        font-size: 90px;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .righttoptext{
+        width: 400px;
+        margin-top: 150px;
+        margin-bottom: 30px;
+    }
+    .righttoptext h3{
+        text-align: right;
+        font-family: 'WonderGardenScript-Regular';
+        font-weight: 500;
+        font-size: 110px;
+        line-height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .message{
+        margin-top:15px;
+        margin-bottom:15px;
+        text-align: center;
+        font-family: "Cormorant Infant", serif;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .bottomtext_1{
+        font-family: 'WonderGardenScript-Regular';
+        font-weight: 500;
+        font-size: 100px;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 400px;
+    }
+
+    .toptext_3{
+        width: 400px;
+        font-family: 'WonderGardenScript-Regular';
+        font-weight: 500;
+        font-size: 110px;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    .schedule {
+        width: 400px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-family:  "Cormorant Infant", serif;
+        font-weight: 500;
+      }
+      
+      .event {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        gap: 100px;
+        margin-bottom: 25px;
+      }
+      
+      .time {
+        font-size: 26px;
+        text-align: left;
+        position: relative;
+      }
+      
+      
+      .details {
+        text-align: left;
+      }
+      
+      .title {
+        font-size: 26px;
+        margin-bottom: 5px;
+        font-weight: 500;
+      }
+      
+      .address {
+        font-size: 24px;
+      }
+      .LastPage{
+        margin-top: 170px;
+        margin-bottom: 280px;    
+      }
+}
